@@ -99,10 +99,7 @@ setuptools.setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
     ],
-    packages=setuptools.find_namespace_packages(
-        include=["megatron.core", "megatron.core.*"],
-        exclude=["images", "images.*"]
-    ),
+    packages=setuptools.find_namespace_packages(include=["megatron.core", "megatron.core.*"]),
     ext_modules=[
         Extension(
             "megatron.core.datasets.helpers_cpp",
